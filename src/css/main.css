@@ -1,0 +1,37 @@
+/* Hero */
+.hero-section{
+  background-image: url('/img/hero/hero-mob.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% 558px;
+}
+.hero-title{
+  font-family: "Island Moments", sans-serif;
+font-weight: 400;
+font-size: 52px;
+line-height: 100%;
+text-align: center;
+color: #fff;
+width: 337px;
+margin-bottom: 320px;
+}
+.hero-text{
+  font-family: "Onest", sans-serif;
+font-weight: 300;
+font-size: 20px;
+text-align: center;
+color: #fff;
+width: 300px;
+margin-bottom: 44px;
+}
+.hero-button{
+  border: 1px solid #015553;
+border-radius: 40px;
+width: 275px;
+height: 72px;
+box-shadow: 0 4px 4px 0 rgba(45, 45, 45, 0.5);
+background: var(--accent);
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
