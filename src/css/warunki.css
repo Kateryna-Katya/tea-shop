@@ -1,0 +1,102 @@
+@import url('./reset.css');
+@import url('./base.css');
+@import url('./footer.css');
+@import url('./container.css');
+.background{
+  background-image: url("../img/polityka-mob.png");
+  background-repeat: no-repeat;
+  background-position: top 138px left 16px;
+  background-size: 343px 58px;
+}
+.rules-button{
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: transparent;
+  font-family: "Onest", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  text-align: center;
+  color: #091018;
+  margin-bottom: 24px;
+  }
+.warunki-title{
+  font-family: "Island Moments", sans-serif;
+font-weight: 400;
+font-size: 49px;
+line-height: 100%;
+color: #026260;
+margin-bottom: 57px;
+width: 343px;
+}
+.warunki-text{
+  font-family: "Onest", sans-serif;
+font-weight: 300;
+font-size: 16px;
+line-height: 140%;
+color: #091018;
+}
+.warunki-subtitle{
+  font-family:"Onest", sans-serif ;
+font-weight: 400;
+font-size: 32px;
+line-height: 150%;
+color:#026260;
+width: 340px;
+margin-top: 20px;
+margin-bottom: 16px;
+}
+.warunki-rules-title{
+  font-family: "Onest", sans-serif;
+font-weight: 400;
+font-size: 24px;
+line-height: 130%;
+color: #091018;
+margin-top: 16px;
+margin-bottom: 16px;
+}
+.warunki-list{
+  list-style-type:disc;
+  padding-left: 25px;
+}
+.warunki-rules-subtitle{
+  font-family: "Onest", sans-serif;
+font-weight: 500;
+font-size: 20px;
+line-height: 130%;
+color: #091018;
+margin-top: 16px;
+margin-bottom: 16px;
+}
+.link-underline{
+  text-decoration: underline;
+}
+@media only screen and (min-width:1439px) {
+  .background{
+    background-image: url("../img/polityka-desk.png");
+    background-repeat: no-repeat;
+    background-position: top 210px left 140px;
+    background-size: 1280px 115px;
+  }
+  .warunki-title{
+  font-size: 80px;
+  text-align: center;
+  width: 1000px;
+  }
+  .rules-container{
+    padding-left: 189px;
+    padding-right: 189px;
+  }
+  .polityka-text{
+
+  }
+  .warunki-subtitle{
+  margin-top: 20px;
+  margin-bottom: 16px;
+  width: 1440px;
+
+  }
+  .warunki-rules-title{
+  }
+}
