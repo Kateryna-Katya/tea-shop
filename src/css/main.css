@@ -27,7 +27,7 @@ margin-bottom: 44px;
 }
 .hero-button{
 box-shadow: 0 4px 4px 0 rgba(45, 45, 45, 0.5);
-  background: #026260;
+  background-color: #026260;
 border-radius: 40px;
 width: 275px;
 height: 72px;
@@ -41,6 +41,11 @@ font-family: "Onest", sans-serif;
 display: block;
 margin-left: auto;
 margin-right: auto;
+transition: background-image 0.3s ease;
+}
+.hero-button:hover,
+.hero-button:active{
+background-image: linear-gradient(90deg, #026260 0%, #c1a569 100%);
 }
 @media only screen and (min-width: 1439px) {
 .hero-section {
@@ -71,13 +76,14 @@ margin-right: auto;
     }
 }
 /* O Nas */
-.about-section{
-      background-image: url('/img/about/leaves-mob.png'),url('/img/about/about.png');
-      background-repeat: no-repeat, no-repeat;
-      background-position: top 72px center, top 650px center ;
-      background-size: 346px 90px, 100% 588px;
-      height: 1244px;
-}
+.about-container{
+  background-image: url('/img/about/leaves-mob.png'), url('/img/about/about.png');
+    background-repeat: no-repeat, no-repeat;
+    background-position: top 72px center, bottom center;
+    background-size: 346px 90px, 100% 588px;
+    height: 1244px;
+  }
+
 .about-title{
   font-family: "Onest", sans-serif;
     font-weight: 400;
@@ -115,14 +121,14 @@ margin-right: auto;
     color: #222;
     width: 276px;
 }
-@media only screen and (min-width: 1439px) {
-  .about-section {
-      background-image: url('/img/about/about.png'),url('/img/about/leaves-mob.png') ;
-      background-repeat: no-repeat, no-repeat;
-      background-position: top left, top 110px right 80px;
-      background-size: 490px 771px, 840px 162px;
-      height: 771px;
-    }
+@media only screen and (min-width: 1439px) { 
+     .about-container {
+          background-image: url('/img/about/about.png'), url('/img/about/leaves-mob.png');
+            background-repeat: no-repeat, no-repeat;
+            background-position: top left, top 110px right 80px;
+            background-size: 490px 771px, 840px 162px;
+            height: 771px;
+         }
     .about-title {
       margin-bottom: 134px;
       margin-left: 440px;
@@ -146,4 +152,191 @@ margin-right: auto;
   font-size: 28px;
   width: 768px;
 }
+}
+/* Nasze Podejście */
+.approach-section{
+  background-color: #8f8162;
+}
+.approach-container{
+  background-image: url('/img/approach/leaves-mob.png'), url('/img/approach/podejście.png');
+    background-repeat: no-repeat, no-repeat;
+    background-position: top 72px center, bottom center;
+    background-size: 346px 90px, 100% 588px;
+    height: 1322px;
+}
+.approach-title{
+  font-family: "Onest", sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+     line-height: 1;
+    color: #e5e5d4;
+    margin-bottom: 42px;
+}
+.approach-subtitle{
+  font-family: "Island Moments", sans-serif;
+    font-weight: 400;
+    font-size: 66px;
+    line-height: 0.8;
+    color: #222;
+    margin-bottom: 24px;
+    width: 300px;
+}
+.approach-list{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.approach-item{
+  display: flex;
+  gap: 16px;
+}
+.approach-img{
+  width: 36px;
+  height: 56px;
+}
+.approach-wraper{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;  
+}
+.item-title{
+  font-family: "Onest", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #e5e5d4;
+}
+.approach-text{
+  font-family: "Onest", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #e5e5d4;
+}
+@media only screen and (min-width: 1439px) {
+  .approach-container {
+      background-image: url('/img/approach/leaves-desk.png'), url('/img/approach/podejście.png');
+      background-repeat: no-repeat, no-repeat;
+      background-position: top 110px left 80px, top right;
+      background-size: 762px 152px, 515px 784px;
+      height: 784px;
+    }
+    .approach-title {
+      margin-bottom: 68px;
+    }
+  
+    .approach-subtitle {
+      font-size: 96px;
+      line-height: 1;
+      margin-bottom: 48px;
+      width: 760px;
+    }
+        .approach-list {
+          gap: 40px;
+        }    
+        .item-title {
+          font-size: 28px;
+        }
+    
+        .approach-text {
+          font-size: 20px;
+        }
+}
+/* Kolekcje Herbat */
+.herbat-container{
+  background-image: url('/img/about/leaves-mob.png');
+  background-repeat: no-repeat;
+  background-position: top 72px center;
+  background-size: 346px 90px;
+ }
+.herbat-title{
+  font-family: "Onest", sans-serif;
+font-weight: 400;
+font-size: 28px;
+line-height: 1;
+color: #222;
+margin-bottom: 42px;
+}
+.herbat-subtitle{
+  font-family: "Island Moments", sans-serif;
+font-weight: 400;
+font-size: 66px;
+line-height: 0.8;
+color: #026260;
+margin-bottom: 24px;
+}
+.herbat-list{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.herbat-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.herbat-img{
+  width: 327px;
+height: 408px;
+margin-bottom: 8px;
+}
+.herbat-item-title{
+  font-family: "Onest", sans-serif;
+font-weight: 400;
+font-size: 28px;
+text-align: center;
+color: #026260;
+}
+.herbat-text{
+  font-family: "Onest", sans-serif;
+font-weight: 300;
+font-size: 20px;
+text-align: center;
+color: #222;
+width: 323px;
+}
+@media only screen and (min-width: 1439px) {
+  .herbat-container{
+    background-image: url('/img/about/leaves-desk.png');
+    background-repeat: no-repeat;
+    background-position: top 110px center;
+    background-size: 1280px 150px;
+   }
+   .herbat-title{
+  margin-bottom: 63px;
+  }
+  .herbat-subtitle{
+  font-size: 96px;
+  line-height: 1;
+  margin-bottom: 48px;
+  }
+  .herbat-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 66px;
+    column-gap: 26px;
+  }
+  .herbat-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 8px;
+width: 300px;
+height: 501px;
+  }
+  .herbat-img{
+    width: 284px;
+    height: 355px;
+  margin-bottom: 16px;
+  }
+  .herbat-item-title{
+    margin-bottom: 16px;
+  }
+  .herbat-text{
+    font-family: "Onest", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-align: center;
+  color: #222;
+  width: 284px
+  }
 }
