@@ -1,37 +1,149 @@
 /* Hero */
 .hero-section{
+  background-color: #8f8162;
   background-image: url('/img/hero/hero-mob.png');
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 100% 558px;
 }
 .hero-title{
-  font-family: "Island Moments", sans-serif;
-font-weight: 400;
-font-size: 52px;
-line-height: 100%;
-text-align: center;
-color: #fff;
+font-family: "Island Moments", sans-serif;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 1;
+  text-align: center;
+  color: #fff;
 width: 337px;
 margin-bottom: 320px;
 }
 .hero-text{
-  font-family: "Onest", sans-serif;
-font-weight: 300;
-font-size: 20px;
-text-align: center;
-color: #fff;
-width: 300px;
+font-family: "Onest", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+width: 330px;
 margin-bottom: 44px;
 }
 .hero-button{
-  border: 1px solid #015553;
+box-shadow: 0 4px 4px 0 rgba(45, 45, 45, 0.5);
+  background: #026260;
 border-radius: 40px;
 width: 275px;
 height: 72px;
-box-shadow: 0 4px 4px 0 rgba(45, 45, 45, 0.5);
-background: var(--accent);
+font-family: "Onest", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: -0.04em;
+  color: #fff;
+  border: inherit;
 display: block;
 margin-left: auto;
 margin-right: auto;
+}
+@media only screen and (min-width: 1439px) {
+.hero-section {
+    background-color: #8f8162;
+    background-image: url('/img/hero/hero-desk.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 900px;
+  }
+    .hero-title {
+     font-size: 96px;
+      width: 652px;
+      margin-bottom: 80px;
+      text-align: left;
+    }
+    .hero-text {
+      font-size: 24px;
+      width: 950px;
+      margin-bottom: 80px;
+      text-align: left;
+    }
+    .hero-button {
+      width: 280px;   
+      display: block;
+      margin-left: 0;
+      margin-right: auto;
+    }
+}
+/* O Nas */
+.about-section{
+      background-image: url('/img/about/leaves-mob.png'),url('/img/about/about.png');
+      background-repeat: no-repeat, no-repeat;
+      background-position: top 72px center, top 650px center ;
+      background-size: 346px 90px, 100% 588px;
+      height: 1244px;
+}
+.about-title{
+  font-family: "Onest", sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+      line-height: 1;
+    color: #222;
+    margin-bottom: 42px;
+}
+.about-subtitle{
+  font-family: "Island Moments", sans-serif;
+    font-weight: 400;
+    font-size: 64px;
+     line-height: 0.8;
+    color: #026260;
+    margin-bottom: 20px;
+}
+.about-list{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.about-item{
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.leaves-img{
+  width: 50px;
+  height: 52px;
+}
+.about-text{
+  font-family: "Onest", sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    color: #222;
+    width: 276px;
+}
+@media only screen and (min-width: 1439px) {
+  .about-section {
+      background-image: url('/img/about/about.png'),url('/img/about/leaves-mob.png') ;
+      background-repeat: no-repeat, no-repeat;
+      background-position: top left, top 110px right 80px;
+      background-size: 490px 771px, 840px 162px;
+      height: 771px;
+    }
+    .about-title {
+      margin-bottom: 134px;
+      margin-left: 440px;
+    }
+    .about-subtitle {
+     font-size: 96px;
+     line-height: 1;
+     margin-bottom: 80px;
+    margin-left: 440px;
+}
+.about-list {
+  gap: 40px;
+  margin-left: 440px;
+}
+.about-item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.about-text {
+  font-size: 28px;
+  width: 768px;
+}
 }
