@@ -72,6 +72,12 @@
   .link-underline{
     text-decoration: underline;
   }
+  .break-url{
+    word-break: break-all;
+  }
+  .footer-container{
+    padding: 40px 50px;
+  }
   @media only screen and (min-width:1439px) {
     .background{
       background-image: url("../img/polityka-desk.png");
@@ -94,5 +100,7 @@
     margin-bottom: 16px;
     width: 1440px;
  }
-
+ .footer-container{
+  padding: 64px 415px;
+}
   }
