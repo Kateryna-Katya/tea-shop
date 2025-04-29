@@ -10,14 +10,16 @@ document.addEventListener('DOMContentLoaded', function () {
             374: {
                 slidesPerView: "auto",
                 spaceBetween: 10,
+                centeredSlides: true,
             },
          
             1439: {
                 slidesPerView: "auto",
                 spaceBetween: 0,
+                centeredSlides: false,
             },
         },
-        centeredSlides: false,
+        
         loop: true,
         slideClass: 'opinie-swiper-slide',
         wrapperClass: 'opinie-swiper-wrapper',
