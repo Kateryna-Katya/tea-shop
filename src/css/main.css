@@ -439,7 +439,7 @@ margin-top: 3px;
      opacity: 1;
     pointer-events: auto;
     position: absolute;
-    top: 60%;
+    top: 50%;
     transform: translateY(-30%);
     width: 1280px;
     z-index: 10;
@@ -471,11 +471,11 @@ margin: 0 auto;
 .opinie-swiper-slide{
   background-image: url('/img/opinie/leaves-right.png'), url('/img/opinie/leaves-left.png');
   background-repeat: no-repeat;
-  background-position: top 45px right 20px, bottom 45px left;
+  background-position: top 30px right 20px, bottom 30px left;
   background-size: 295px 85px, 295px 85px ;  
   max-width: 500px;
   height: 270px;
-  padding: 10px 46px;
+  padding: 0
 }
 .swiper-text{
 width: 382px;
