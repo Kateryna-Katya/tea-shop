@@ -3,8 +3,9 @@
   background-color: #8f8162;
   background-image: url('/img/hero/hero-mob.png');
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: top 100px center;
   background-size: 100% 558px;
+  height: 812px;
 }
 .hero-title{
 font-family: "Island Moments", sans-serif;
@@ -15,6 +16,7 @@ font-family: "Island Moments", sans-serif;
   color: #fff;
 width: 337px;
 margin-bottom: 320px;
+margin-top: 100px;
 }
 .hero-text{
 font-family: "Onest", sans-serif;
