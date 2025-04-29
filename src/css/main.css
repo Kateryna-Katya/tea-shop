@@ -340,3 +340,287 @@ height: 501px;
   width: 284px
   }
 }
+/* Opinie */
+.opinie-section{
+  background-color: #8f8162;
+}
+.opinie-container{
+  background-image: url('/img/approach/leaves-mob.png');
+  background-repeat: no-repeat;
+  background-position: top 72px center;
+  background-size: 346px 90px;
+}
+.opinie-title{
+  font-family: "Onest", sans-serif;
+font-weight: 400;
+font-size: 28px;
+line-height: 1;
+color: #e5e5d4;
+margin-bottom: 92px;
+}
+.opinie-nav{
+  display: none;
+}
+.opinie-swiper{
+  height: 362px;
+}
+.opinie-swiper-slide{
+  background-image: url('/img/opinie/leaves-right.png'), url('/img/opinie/leaves-left.png');
+  background-repeat: no-repeat;
+  background-position: top 30px center, bottom left;
+  background-size: 296px 65px, 296px 65px ;  
+  width: 297px;
+  min-height: 332px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content:center;
+  padding: 52px 40px;
+}
+.swiper-text{
+  font-family: "Onest", sans-serif;
+font-weight: 300;
+font-size: 16px;
+color: #e5e5d4;
+width: 233px;
+height: auto;
+
+}
+.author-text{
+  font-family: "Onest", sans-serif;
+font-weight: 500;
+font-size: 16px;
+text-align: right;
+color: #e5e5d4;
+width: 233px;
+margin-top: 3px;
+}
+.custom-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  width: 100%;
+  height: 50px;
+}
+
+.pagination-item {
+  border-radius: 100px;
+  width: 10px;
+  height: 10px;
+  background: #e5e5d4;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.pagination-item.active {
+  background-color: #026260;
+  transform: scale(1.5);
+}
+@media only screen and (min-width: 1439px) {
+  .opinie-container{
+    background-image: url('/img/approach/leaves-desk.png');
+    background-repeat: no-repeat;
+    background-position:top 110px left 80px;
+    background-size: 1279px 112px;
+    position: relative;
+  }
+  .opinie-title{
+  margin-bottom: 68px;
+  }
+  .custom-pagination{
+    display: none;
+  }
+  .opinie-nav{
+    display: flex;
+    justify-content: space-between;
+     opacity: 1;
+    pointer-events: auto;
+    position: absolute;
+    top: 60%;
+    transform: translateY(-30%);
+    width: 1280px;
+    z-index: 10;
+  }
+  .custom-arrow{
+    border-radius: 100px;
+    background-color: #026260;
+    width: 60px;
+    height: 60px;
+    border: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    transition: background-image 0.3s ease;
+  }
+  .custom-next{
+    transform: rotate(180deg);
+  }
+  .custom-arrow:hover{
+    background-image: linear-gradient(270deg, #026260 3.5%, #8f8162 100%);
+  }
+.opinie-swiper{
+  width: 1100px;
+  height:290px;
+margin: 0 auto;
+}
+
+.opinie-swiper-slide{
+  background-image: url('/img/opinie/leaves-right.png'), url('/img/opinie/leaves-left.png');
+  background-repeat: no-repeat;
+  background-position: top 45px right 20px, bottom 45px left;
+  background-size: 295px 85px, 295px 85px ;  
+  max-width: 500px;
+  height: 270px;
+  padding: 10px 46px;
+}
+.swiper-text{
+width: 382px;
+height: auto;
+
+}
+.author-text{
+width: 382px;
+margin-top: 3px;
+}
+}
+/* Często Zadawane Pytania */
+.faq-container{
+  background-image: url('/img/about/leaves-mob.png');
+  background-repeat: no-repeat;
+  background-position: top 72px center;
+  background-size: 346px 90px;
+}
+.faq-title{
+  font-family: "Onest", sans-serif;
+font-weight: 400;
+font-size: 28px;
+line-height: 1;
+color: #222;
+margin-bottom: 62px;
+}
+.faq-acc {
+  display: flex;
+  flex-direction: column;
+   min-width: 343px;
+  margin: 0 auto;
+ }
+
+.faq-acc-el {
+  position: relative;
+  transition: margin-bottom 0.3s ease;
+
+}
+
+.faq-acc-el-trigger {
+  padding: 12px 24px;
+  width: 100%;
+  max-height: 76px;
+  background: inherit;
+  border: none;
+  border-bottom: 1px solid #026260;
+  font-family: "Onest", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #222;
+  cursor: pointer;
+  box-sizing: border-box;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.faq-acc-arr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: inherit;
+  min-width: 48px;
+  transition: transform 0.3s ease;
+}
+.faq-acc-el.open .faq-acc-arr {
+  transform: rotate(180deg);
+}
+
+.faq-acc-arr.is-hidden {
+  display: none;
+}
+
+.faq-acc-el-descr-frame {
+  border: 1px solid #026260;
+  border-radius: 0 0 40px 40px;
+  padding: 16px 24px;
+  max-width: 343px;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 1s ease, opacity 0.5s ease, padding 0.5s ease;
+}
+
+.faq-acc-el.js-enabled .faq-acc-el-descr-frame {
+  visibility: hidden;
+}
+
+.faq-acc-el.open .faq-acc-el-trigger {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+
+}
+
+.faq-acc-el.open .faq-acc-el-descr-frame {
+  visibility: visible;
+  opacity: 1;
+  background: inherit;
+  border: 1px solid #026260;
+border-radius: 0 0 40px 40px;
+padding: 16px 24px;
+width: 343px;
+}
+@media only screen and (min-width: 1439px) {
+  .faq-container{
+    background-image: url('/img/about/leaves-desk.png');
+    background-repeat: no-repeat;
+    background-position: top 110px center;
+    background-size: 1280px 150px;
+  }
+  .faq-title{
+  margin-bottom: 75px;
+  }
+  .faq-acc-el-trigger {  
+    width: 1062px;
+    max-height: auto;
+    font-size: 24px;
+    margin-left: auto;
+    margin-right: auto;
+   }
+   .faq-acc-el-descr-frame {
+    border: 1px solid #026260;
+    border-radius: 0 0 40px 40px;
+    padding: 16px 24px;
+    min-width: 1062px;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    margin-left: auto;
+    margin-right: auto;
+    transition: max-height 1s ease, opacity 0.5s ease, padding 0.5s ease;
+  }
+  .faq-acc-el.open .faq-acc-el-descr-frame {
+    visibility: visible;
+    opacity: 1;
+    background: inherit;
+    font-family: "Onest", sans-serif;
+font-weight: 300;
+font-size: 18px;
+color: #222;
+    border: 1px solid #026260;
+    border-radius: 0 0 40px 40px;
+    padding: 16px 24px;
+    min-width: 1062px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
