@@ -474,8 +474,8 @@ margin: 0 auto;
   background-position: top 30px right 20px, bottom 30px left;
   background-size: 295px 85px, 295px 85px ;  
   width: 500px;
-  height: 270px;
-  padding: 40px 32px;
+  height: auto;
+  padding: 50px 32px ;
 }
 .swiper-text{
 width: 382px;
