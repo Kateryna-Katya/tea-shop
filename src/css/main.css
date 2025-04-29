@@ -471,7 +471,7 @@ margin: 0 auto;
 .opinie-swiper-slide{
   background-image: url('/img/opinie/leaves-right.png'), url('/img/opinie/leaves-left.png');
   background-repeat: no-repeat;
-  background-position: top 30px right 20px, bottom 30px left;
+  background-position: top 50px right 20px, bottom 50px left;
   background-size: 295px 85px, 295px 85px ;  
   width: 500px;
   height: auto;
