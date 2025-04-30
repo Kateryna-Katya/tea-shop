@@ -370,14 +370,15 @@ margin-bottom: 92px;
   background-image: url('/img/opinie/leaves-right.png'), url('/img/opinie/leaves-left.png');
   background-repeat: no-repeat;
   background-position: top 10px center, bottom left;
-  background-size: 296px 65px, 296px 65px ;  
-  width: 297px;
+  background-size: 250px 65px, 250px 65px ;  
+  min-width: 260px;
   min-height: 332px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content:center;
-  padding: 52px 40px;
+ padding-top:55px;
+ padding-left: 16px;
 }
 .swiper-text{
   font-family: "Onest", sans-serif;

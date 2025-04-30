@@ -8,9 +8,9 @@ document.addEventListener('DOMContentLoaded', function () {
         modules: [Navigation],
         breakpoints: {
             374: {
-                slidesPerView: "auto",
+                slidesPerView: 1.3,
                 spaceBetween: 10,
-                centeredSlides: true,
+                centeredSlides: false,
             },
          
             1439: {
